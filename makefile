@@ -5,6 +5,7 @@ all: main
 
 main: main.o file.o scheduling.o process.o time_diagram.o fcfs.o sjf.o roundrobin.o bypriority.o cpu.o
 	$(CPP) -o main main.o file.o scheduling.o process.o time_diagram.o fcfs.o sjf.o roundrobin.o bypriority.o cpu.o -lstdc++
+	rm -rf *.o 
 
 main.o: src/main.cpp src/class/File.h src/class/Process.h src/class/scheduling/FCFS.h src/class/scheduling/SJF.h src/class/scheduling/RoundRobin.h src/class/scheduling/ByPriority.h
 	$(CPP) -o main.o src/main.cpp $(CPPFLAGS)
@@ -35,7 +36,6 @@ bypriority.o: src/class/scheduling/ByPriority.cpp src/class/scheduling/ByPriorit
 
 cpu.o: src/class/CPU.cpp src/class/CPU.h src/structures/Registers.h
 	$(CPP) -o cpu.o src/class/CPU.cpp  $(CPPFLAGS)
-
 
 clean:
 	rm -rf *.o *~ main
