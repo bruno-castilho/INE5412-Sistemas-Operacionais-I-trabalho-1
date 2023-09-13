@@ -74,6 +74,9 @@ class Process{
 
         // Gera valores aleatórios para os registradores.
         void generateRandomValuesForRegisters(mt19937_64* generator);
+
+        // Imprime valores dos registradores.
+        void showRegisters();
 };
 
 #endif

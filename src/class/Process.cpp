@@ -94,11 +94,11 @@ bool Process::compareSubmitTime(Process *a, Process *b) {
 
 int Process::calculateTurnaroundTime(){
     return this->end_time - this->submit_time;
-};
+}
 
 int Process::calculateAverageWaitingTime(){
     return this->end_time - this->submit_time - this->time_exec;
-};
+}
 
 void Process::generateRandomValuesForRegisters(mt19937_64* generator){
     this->registers.s0 = (*generator)();
@@ -110,4 +110,16 @@ void Process::generateRandomValuesForRegisters(mt19937_64* generator){
     this->registers.SP = (*generator)();
     this->registers.PC = (*generator)();
     this->registers.ST = (*generator)();
+}
+
+void Process::showRegisters(){
+    cout << "s0 " << this->registers.s0 << endl;
+    cout << "s1 " << this->registers.s1 << endl;
+    cout << "s2 " << this->registers.s2 << endl;
+    cout << "s3 " << this->registers.s3 << endl;
+    cout << "s4 " << this->registers.s4 << endl;
+    cout << "s5 " << this->registers.s5 << endl;
+    cout << "SP " << this->registers.SP << endl;
+    cout << "PC " << this->registers.PC << endl;
+    cout << "ST " << this->registers.ST << endl;
 }

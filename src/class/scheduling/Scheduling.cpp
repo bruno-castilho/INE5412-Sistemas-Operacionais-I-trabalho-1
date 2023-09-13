@@ -33,11 +33,23 @@ void Scheduling::selection(){
     // Troca o contexto do processor para o novo processo.
     this->INE5412->setRegisters(this->process_table.running_process->getRegisters());
     this->context_switches++ ;
+
+    // Descomente o trecho abaixo para visualizar os valores dos registradores.
+    // cout << "Seleção P" <<  this->process_table.running_process->getPid() << endl;
+    // this->process_table.running_process->showRegisters();
+    // cout << "INE5412" << endl;
+    // this->INE5412->showRegisters();
 }
 
 void Scheduling::preemption(){
     // Salva contexto atual do processo na cpu.
     this->process_table.running_process->setRegisters(this->INE5412->getRegisters());
+
+    // Descomente o trecho abaixo para visualizar os valores dos registradores.
+    // cout << "Preempção P" <<  this->process_table.running_process->getPid() << endl;
+    // this->process_table.running_process->showRegisters();
+    // cout << "INE5412" << endl;
+    // this->INE5412->showRegisters();
 
     // Zera o current_time_exec do processo.
     this->process_table.running_process->setCurrentTimeExec(0);

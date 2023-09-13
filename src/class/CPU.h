@@ -22,6 +22,9 @@ class CPU{
         // Altera os registradores para valores aleatórios.
         void changeRegisters(mt19937_64* generator);
 
+        // Imprime valores dos registradores.
+        void showRegisters();
+
         // Get
         Registers* getRegisters();
         
