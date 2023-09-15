@@ -18,9 +18,22 @@ Scheduling::Scheduling(vector<Process *> processes_read){
 Scheduling::~Scheduling(){
     delete this->INE5412;
     delete this->time_diagram;
-    this->processes_read.clear();
-    this->process_table.ready_processes.clear();
-    this->process_table.finished_processes.clear();
+
+    for(vector<Process*>::size_type i = 0; i < this->processes_read.size() ; i++) {
+        Process *p = this->processes_read[i];
+        delete p;
+    }
+
+    for(vector<Process*>::size_type i = 0; i < this->process_table.ready_processes.size() ; i++) {
+        Process *p = this->process_table.ready_processes[i];
+        delete p;
+    }
+
+
+    for(vector<Process*>::size_type i = 0; i < this->process_table.finished_processes.size() ; i++) {
+        Process *p = this->process_table.finished_processes[i];
+        delete p;
+     }
 }
 
 void Scheduling::selection(){

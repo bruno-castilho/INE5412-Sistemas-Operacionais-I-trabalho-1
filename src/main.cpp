@@ -49,7 +49,10 @@ int main()
      round_robin.run();
      round_robin.showResults();
 
-     processes_read.clear();
 
+     for(vector<Process*>::size_type i = 0; i < processes_read.size() ; i++) {
+          Process *p = processes_read[i];
+          delete p;
+     }
 
 }

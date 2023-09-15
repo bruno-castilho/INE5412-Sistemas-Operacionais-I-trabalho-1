@@ -1,5 +1,5 @@
 CPP = gcc
-CPPFLAGS = -c -W -Wall -ansi -pedantic -std=c++11
+CPPFLAGS = -g -c -W -Wall -ansi -pedantic -std=c++11
 
 all: main
 
