@@ -1,6 +1,6 @@
 #ifndef Process_H
 #define Process_H
-#include "../structures/Registers.h"
+#include "./structures/Registers.h"
 #include <iostream>
 #include <random>
 #include <stdint.h>

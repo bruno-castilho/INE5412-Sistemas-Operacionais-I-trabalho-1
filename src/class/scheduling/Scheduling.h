@@ -5,7 +5,7 @@
 #include <vector>
 #include <random>
 
-#include "../../structures/ProcessTable.h"
+#include "../structures/ProcessTable.h"
 #include "../Process.h"
 #include "../TimeDiagram.h"
 #include "../CPU.h"

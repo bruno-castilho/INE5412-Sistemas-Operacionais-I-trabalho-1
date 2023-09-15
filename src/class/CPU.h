@@ -1,6 +1,6 @@
 #ifndef CPU_H
 #define CPU_H
-#include "../structures/Registers.h"
+#include "./structures/Registers.h"
 #include <iostream>
 #include <random>
 #include <stdint.h>

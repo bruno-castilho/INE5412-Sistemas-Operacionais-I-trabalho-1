@@ -16,7 +16,7 @@ file.o: src/class/File.cpp src/class/File.h src/class/Process.h
 scheduling.o: src/class/scheduling/Scheduling.cpp src/class/scheduling/Scheduling.h src/class/Process.h src/class/TimeDiagram.h
 	$(CPP) -o scheduling.o src/class/scheduling/Scheduling.cpp $(CPPFLAGS)
 
-process.o: src/class/Process.cpp src/class/Process.h src/structures/Registers.h
+process.o: src/class/Process.cpp src/class/Process.h src/class/structures/Registers.h
 	$(CPP) -o process.o src/class/Process.cpp $(CPPFLAGS)
 
 time_diagram.o: src/class/TimeDiagram.cpp src/class/TimeDiagram.h src/class/Process.h
@@ -34,7 +34,7 @@ roundrobin.o: src/class/scheduling/RoundRobin.cpp src/class/scheduling/RoundRobi
 bypriority.o: src/class/scheduling/ByPriority.cpp src/class/scheduling/ByPriority.h src/class/scheduling/Scheduling.h
 	$(CPP) -o bypriority.o src/class/scheduling/ByPriority.cpp  $(CPPFLAGS)
 
-cpu.o: src/class/CPU.cpp src/class/CPU.h src/structures/Registers.h
+cpu.o: src/class/CPU.cpp src/class/CPU.h src/class/structures/Registers.h
 	$(CPP) -o cpu.o src/class/CPU.cpp  $(CPPFLAGS)
 
 clean:
