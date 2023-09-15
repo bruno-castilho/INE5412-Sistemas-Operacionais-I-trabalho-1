@@ -90,5 +90,16 @@ usadas para implementar os algoritmos de escalonamento a fim de reaproveitar o c
 adição de novas políticas no simulador (engenharia de software).
 
 ## Instalação
+- Bare Metal
+
+- Docker
+
+## Compilação
+- Bare Metal
+
+- Docker
 
 ## Execução
+- Bare Metal
+
+- Docker
