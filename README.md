@@ -89,6 +89,6 @@ classes apropriadas e seus relacionamentos. A solução deve conter também uma 
 usadas para implementar os algoritmos de escalonamento a fim de reaproveitar o código e facilitar a
 adição de novas políticas no simulador (engenharia de software).
 
-## INSTALAÇÃO
+## Instalação
 
-## EXECUÇÃO
+## Execução
