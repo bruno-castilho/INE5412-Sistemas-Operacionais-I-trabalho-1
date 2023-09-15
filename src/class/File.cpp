@@ -32,6 +32,7 @@ vector<Process *> File::read(){
 
     // Imprime quantidade de processos lidos.
     cout << "Quantidade de processos lidos do arquivo: " << processes_read.size() << endl;
+    cout << endl;
 
     return processes_read;
 
