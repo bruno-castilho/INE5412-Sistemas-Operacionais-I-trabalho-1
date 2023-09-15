@@ -90,16 +90,91 @@ usadas para implementar os algoritmos de escalonamento a fim de reaproveitar o c
 adição de novas políticas no simulador (engenharia de software).
 
 ## Instalação
-- Bare Metal
+### Opção 1: Bare Metal
 
-- Docker
+  
+  **Passo 1: Verifique a versão do GCC atual (opcional)**
+  
+   Antes de instalar o GCC 11.4.0, você pode verificar a versão atual do GCC em seu sistema usando o seguinte comando:
+   
+   ```bash
+   gcc --version
+   ```
+   
+   Isso ajudará você a determinar se a versão atual é 11.4.0 ou anterior.
+  
+  **Passo 2: Atualize os repositórios do sistema**
+  
+   Abra um terminal e execute o seguinte comando para garantir que os repositórios do sistema estejam atualizados:
+   
+   ```bash
+   sudo apt update  # Para sistemas baseados no Debian (como o Ubuntu)
+   ```
+  
+  **Passo 3: Instale as dependências necessárias**
+  
+   Para compilar o GCC a partir do código-fonte, você precisará de algumas dependências. Execute o seguinte comando para instalá-las:
+   
+   ```bash
+   sudo apt install -y build-essential
+   ```
+   
+   Isso instalará um conjunto de pacotes essenciais para o desenvolvimento, incluindo compiladores, bibliotecas e utilitários.
+  
+  **Passo 4: Baixe o código-fonte do GCC 11.4.0**
+  
+   Você pode baixar o código-fonte do GCC 11.4.0 do site oficial do GCC ou de um espelho. Aqui, usaremos o espelho do GCC no servidor FTP da GNU:
+   
+   ```bash
+   wget https://ftp.gnu.org/gnu/gcc/gcc-11.4.0/gcc-11.4.0.tar.gz
+   ```
+  
+  **Passo 5: Extraia o código-fonte**
+  
+   Descompacte o arquivo tar.gz baixado usando o seguinte comando:
+   
+   ```bash
+   tar -xf gcc-11.4.0.tar.gz
+   ```
+  
+  **Passo 6: Configure e compile o GCC**
+  
+   Navegue para o diretório GCC recém-criado e execute os comandos `configure` e `make` para configurar e compilar o GCC:
+   
+   ```bash
+   cd gcc-11.4.0
+   ./configure
+   make -j$(nproc)
+   ```
+   
+   Este processo pode levar algum tempo, dependendo da potência do seu sistema.
+  
+  **Passo 7: Instale o GCC**
+  
+   Após a conclusão da compilação, você pode instalar o GCC com o seguinte comando:
+   
+   ```bash
+   sudo make install
+   ```
+   
+  **Passo 8: Verifique a instalação**
+  
+   Para verificar se o GCC 11.4.0 foi instalado corretamente, você pode usar o seguinte comando:
+   
+   ```bash
+   gcc --version
+   ```
+   
+   Você deve ver a versão do GCC como 11.4.0.
+
+### Opção 1: Docker
 
 ## Compilação
-- Bare Metal
+### Opção 1: Bare Metal
 
-- Docker
+### Opção 1: Docker
 
 ## Execução
-- Bare Metal
+### Opção 1: Bare Metal
 
-- Docker
+### Opção 1: Docker
