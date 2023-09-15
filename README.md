@@ -1,5 +1,6 @@
 # INE5412 – Sistemas Operacionais I - Trabalho 1 - Simulação de Algoritmos de Escalonamento
 
+## Descrição
 O presente trabalho tem por objetivo escrever um programa para simular o escalonamento e
 abstração de um conjunto de processos/threads através do uso de algoritmos de escalonamento de
 processos conhecidos na literatura. O programa deve suportar os seguintes algoritmos de
@@ -87,3 +88,7 @@ O trabalho deve ser escrito em C++ e portanto deve apresentar as abstrações da
 classes apropriadas e seus relacionamentos. A solução deve conter também uma estrutura de classes
 usadas para implementar os algoritmos de escalonamento a fim de reaproveitar o código e facilitar a
 adição de novas políticas no simulador (engenharia de software).
+
+## INSTALAÇÃO
+
+## EXECUÇÃO
