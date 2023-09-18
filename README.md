@@ -149,7 +149,7 @@ adição de novas políticas no simulador (engenharia de software).
     make
   ```
 
-### Opção 1: Docker
+### Opção 2: Docker
   **Na pasta raiz do projeto, execute**
    ```bash
     docker build -t scheduling-simulator .
@@ -160,7 +160,7 @@ adição de novas políticas no simulador (engenharia de software).
    ```bash
     ./main data/entrada.txt
    ```
-### Opção 1: Docker
+### Opção 2: Docker
 **Na pasta raiz do projeto, execute**
    ```bash
     docker run -v ./data:/data scheduling-simulator /data/entrada.txt
